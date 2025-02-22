@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWeed AI - Weed Detection Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Fade-in effect */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInAnimation 1s ease-in-out forwards;
+        }
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Navbar styling */
+        .navbar {
+            transition: background-color 0.5s ease-in-out;
+        }
+        .navbar-brand img {
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        /* Features Section Styling */
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box i {
+    color: #28a745;
+}
+
+        
+        /* Button hover effect */
+        .btn-light:hover {
+            background-color: #f8d210;
+            color: #000;
+        }
+        
+        /* Footer icons hover effect */
+        footer a:hover {
+            color: #f8d210 !important;
+        }
+
+        /* Team Section Styling */
+/* Team Section Styling */
+.team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns content */
+    justify-content: center;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fade-in">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="eco.jpg" alt="EcoWeed AI Logo" height="40"> EcoWeed AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5 fade-in">
+        <div class="container">
+            <h1>EcoWeed AI - Classification and Detection of Weed</h1>
+            <p class="lead">Solving agricultural challenges with AI-powered weed detection.</p>
+            <a href="https://seenaiahdommalapati.pythonanywhere.com/" class="btn btn-light btn-lg">Try Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 fade-in">
+        <div class="container text-center">
+            <h2>About EcoWeed AI</h2>
+            <p>EcoWeed AI is a pioneering company dedicated to revolutionizing modern agriculture through cutting-edge artificial intelligence and machine learning. Our mission is to assist farmers in identifying and eliminating weeds efficiently, thereby improving crop yield and reducing the dependency on harmful herbicides.</p>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="whatwedo" class="bg-light py-5 fade-in">
+        <div class="container text-center">
+            <h2>What We Do</h2>
+            <p>At EcoWeed AI, we specialize in AI-driven weed detection systems designed to help farmers identify and eliminate weeds effectively. Our technology integrates deep learning models that analyze crop fields and provide real-time insights to assist in making informed decisions.</p>
+            <p>By using state-of-the-art machine learning techniques, we are able to differentiate between crops and weeds with high accuracy. This helps farmers reduce the use of chemical herbicides, making agriculture more sustainable and cost-effective.</p>
+            <p>Our solution is designed to be user-friendly and accessible across multiple platforms, ensuring that farmers, regardless of their technical expertise, can benefit from our AI-powered weed detection tool.</p>
+        </div>
+    </section>
+    <!-- Features Section -->
+<section id="features" class="py-5 bg-light fade-in">
+    <div class="container text-center">
+        <h2>Features</h2>
+        <p class="mb-4">Explore the key features that make EcoWeed AI stand out in precision agriculture.</p>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-seedling fa-3x mb-3"></i>
+                    <h4>AI-Powered Detection</h4>
+                    <p>Utilizes advanced deep learning algorithms to identify weeds with high accuracy.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-leaf fa-3x mb-3"></i>
+                    <h4>Eco-Friendly</h4>
+                    <p>Reduces the use of harmful herbicides, promoting sustainable farming practices.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-box">
+                    <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                    <h4>Mobile & Web Support</h4>
+                    <p>Access the system from any device, making it convenient for farmers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Team Section -->
+    <!-- Team Section -->
+<section id="team" class="py-5 fade-in">
+    <div class="container text-center">
+        <h2>Meet Our Team</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="member1.jpg" class="team-img" alt="Team Member">
+                    <h4>Kalyan</h4>
+                    <p>Chief Executive Officer (CEO)</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="member1.jpg" class="team-img" alt="Team Member">
+                    <h4>Rama Krishna</h4>
+                    <p>Chief Technology Officer (CTO) & AI Lead</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="member1.jpg" class="team-img" alt="Team Member">
+                    <h4>Bavesh</h4>
+                    <p>Machine Learning Engineer</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="team-card">
+                    <img src="member1.jpg" class="team-img" alt="Team Member">
+                    <h4>Seenaiah</h4>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer id = "contact" class="bg-dark text-white text-center py-4 fade-in">
+        <div class="container">
+            <p>&copy; 2024 EcoWeed AI. All rights reserved.</p>
+            <p>Contact us:</p>
+            <div>
+                <a href="https://www.linkedin.com/" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="99220040045@klu.ac.in" class="text-white mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
